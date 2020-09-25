@@ -1,7 +1,7 @@
 CC = gcc
-OBJ = hello.o
+OBJ = hello.o add.o
 hello-app: $(OBJ)
-	$(CC) $< -o $@
-%.o: %.c
-	$(CC) -c $< -o $@
+	$(CC) $^ -o $@
+#%.o: %.c
+#	$(CC) -c $< -o $@
 

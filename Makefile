@@ -1,7 +1,10 @@
-CC = gcc
-OBJ = hello.o
-hello-app: $(OBJ)
-	$(CC) $< -o $@
-%.o: %.c
-	$(CC) -c $< -o $@
+BASE_ADDR = ./
+test_addr = test
+all:
+	make -C $(BASE_ADDR)$(test_addr)
+
+
+
+
+
 
